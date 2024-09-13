@@ -44,3 +44,22 @@ console.log(cekBPJS("akmal", 2, 1, 1000000));
 console.log(cekBPJS("yuda", 0, 1, 1500000));
 console.log(cekBPJS("andre", 5, 0, 10000000));
 console.log(cekBPJS(5, 0, 10000000));
+
+function findUserCountry(user) {
+  return (user.address && user.address.country) || "unknown";
+}
+
+let user1 = {
+  name: "soeharto",
+  age: 50,
+  address: {
+    city: "jakarta",
+    country: "indonesia",
+  },
+};
+let user2 = {
+  name: "mulyonosaurus",
+  age: 55,
+};
+console.log(findUserCountry(user1));
+console.log(findUserCountry(user2));
