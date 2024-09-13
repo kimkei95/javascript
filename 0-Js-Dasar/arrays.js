@@ -242,20 +242,17 @@ console.log("jumlah hobi:", filterHobi.length);
 //bandingin pake reduce(salary) cara dapet salary dr reduce pake find
 
 const frontEndEmployeeNames = employee
-  .filter((emp) => emp.jobDesk.includes("FrontEnd")) // Filter employees with "FrontEnd" job desk
+  .filter((emp) => emp.jobDesk.includes("FrontEnd"))
   .reduce((names, emp) => {
-    // Reduce to accumulate names
     names.push(emp.nama);
     return names;
-  }, []); // Initial accumulator is an empty array
+  }, []);
 
-const hasFrontEndJob = employee.some((emp) => emp.jobDesk.includes("FrontEnd")); // Check if there is any employee with "FrontEnd" job desk
+const hasFrontEndJob = employee.some((emp) => emp.jobDesk.includes("FrontEnd"));
 
 const firstFrontEndEmployee = employee.find((emp) =>
   emp.jobDesk.includes("FrontEnd")
-); // Find the first employee with "FrontEnd" job desk
-
-// Combine all results into a single output
+);
 console.log(
   "Nama-nama karyawan dengan job desk FrontEnd:",
   frontEndEmployeeNames
