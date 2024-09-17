@@ -262,3 +262,14 @@ console.log(
   "Nama karyawan pertama dengan job desk FrontEnd:",
   firstFrontEndEmployee ? firstFrontEndEmployee.nama : "Tidak ada"
 );
+
+//cara simple
+
+// const frontEndEmployee = employee.filter((item) =>
+//   item.jobDesk
+//     .some((item) => item.title === "FrontEnd")
+//     .reduce((acc, cur) =>
+//       acc.jobDesk[0].salary > cur.jobDesk[0].salary ? acc : cur
+//     )
+// );
+// console.log(frontEndEmployee.nama);
