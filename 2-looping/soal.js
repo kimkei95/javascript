@@ -10,6 +10,14 @@ function angkaGanjil(n) {
   }
   return oddNums;
 }
+
+/** coding mas danu
+ * for(leti=1;i<=20;i++){
+ * if(i%2 !==0){
+ * console.log(i);
+ * }
+ * }
+ */
 console.log(angkaGanjil(10));
 
 /**buat looping menggunakan for untuk mencari nilai tertinggi dari sebuah array menggunakan for loop*/

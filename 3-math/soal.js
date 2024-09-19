@@ -64,6 +64,8 @@ const salaries = employee.map((emp) => emp.jobDesk[0].salary);
 // Menemukan gaji terendah dan tertinggi
 const minSalary = Math.min(...salaries);
 const maxSalary = Math.max(...salaries);
+console.log("gaji terkecil: ", minSalary);
+console.log("gaji terbesarL ", maxSalary);
 
 // Menghitung selisih antara gaji tertinggi dan terendah
 const salaryDifference = maxSalary - minSalary;
