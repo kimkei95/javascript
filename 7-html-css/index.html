@@ -1,0 +1,199 @@
+<!--html: bahasa markup yang berisi tag tag untuk bikin kerangka website-->
+<!DOCTYPE html>
+<!--doctype html: menandakan bahwa file ini html-->
+<!--setiap tag dibua denga nkurung segitiga-->
+<html>
+  <!--tag head : berisi informasi tentang halaman website-->
+  <head>
+    <title>website bootcamp</title>
+    <!--tag meta: buat ngasi informasi website ke browser-->
+    <!--charset: buat nentuin encoding/karakter/teks website-->
+    <meta charset="UTF-8" />
+    <!--meta viewport: untuk ngatur uuran halaman di semua device dipastiin ukurannya 100%-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--tag style untuk bikin css di satu codingan-->
+    <!-- <style>
+      body {
+        background-color: cadetblue;
+      }
+    </style> -->
+    <!--tag link: untuk hubungin ke css-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!--Tag body: berisi konten halaman website-->
+  <body>
+    <!--tag nav: untuk navigasi-->
+    <nav>
+      <!--tag a: pembungkus navigasi-->
+      <!--target blank: untuk membuka nya di tab baru -->
+      <a href="http://www.google.com" target="_blank">google</a>
+      <a href="http://www.facebook.com" target="_blank">facebook</a>
+      <a href="http://www.instagram.com" target="_blank">instagram</a>
+    </nav>
+    <!--tag header h1-h6: untuk membuat judul konten-->
+    <h1 class="style-h1">ini heading</h1>
+    <h2>heading juga</h2>
+    <h3>heading lagi</h3>
+    <h4>masih heading</h4>
+    <h5>hehe</h5>
+    <h6>see more</h6>
+    <!--div: tag untuk membungkus kumpulan tag/kerangka menjadi satu komponen-->
+    <div class="style-div">
+      <!--tag p: untuk buat paragraf-->
+      <!--tag b: bold-->
+      <p>tag p : untuk membuat teks berisi <b>paragraf</b></p>
+      <p><b>tag b: buat teks bold</b></p>
+      <p><i>tag i: supaya miring</i></p>
+      <p><u>tag u : buat bikin underline</u></p>
+      <p><span>tag span: untuk membuat teks biasa bukan paragraf</span></p>
+    </div>
+    <!--tag hr: untuk bikin garis horizontal-->
+    <hr />
+    <!--tag img: untuk naro gambar-->
+    <!--src: untuk mengambil sumber gambar-->
+    <!--alt: intik memberi keterangan gambar-->
+    <img
+      class="style-img"
+      src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
+      alt="logo youtube"
+    />
+    <!--tag br buat bikin garis baru-->
+    <br />
+    <!--tag ul: untuk buat unorder list (list tak berurut)-->
+    <ul>
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ul>
+    <ol>
+      <!--tag ol: buat list order-->
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ol>
+    <!--tag table: untuk membuat table-->
+    <table class="style-table">
+      <!--th: untuk membuat table header-->
+      <th>table header 1</th>
+      <th>table header 2</th>
+      <!--tag tr: untuk membuat row table-->
+      <tr>
+        <!--tag td: untuk bikin data table-->
+        <td>data table 1</td>
+        <td>data table 2</td>
+      </tr>
+      <tr>
+        <td>data table 3</td>
+        <td>data table 4</td>
+      </tr>
+    </table>
+    <!--form: untuk bikin form kek login dll-->
+    <form class="style-form">
+      <!--label; untuk memberikan identitas-->
+      <!--for: target kemana label ini akan dipakai-->
+      <label for="name">Nama</label>
+      <!--tag input buat naro input-->
+      <input id="name" type="text" />
+      <label for="email">Email</label>
+      <input id="email" type="email" />
+      <label for="password">password</label>
+      <input id="password" type="password" />
+      <label for="date">Date</label>
+      <input id="date" type="date" />
+      <div class="gender">
+        <span>Jenis Kelamin</span>
+        <input id="male" type="radio" />
+        <label for="male">Lakik</label>
+        <input id="female" type="radio" />
+        <label for="female">Cewe</label>
+      </div>
+      <label for="deskripsi">Deskripsi</label>
+      <textarea name="deskripsi">Deskripsikan tentang diri anda</textarea>
+      <label for="color">Color</label>
+      <input id="color" type="color" />
+      <label for="range">range penguasaan IT</label>
+      <input id="range" type="range" />
+      <label for="file">Upload foot</label>
+      <input id="file" type="file" />
+      <div class="agreement">
+        <input id="agreement" type="checkbox" />
+        <label for="agreement">Agreement</label>
+      </div>
+      <input type="submit" />
+    </form>
+
+    <div class="product-section">
+      <h2>Product List</h2>
+      <div class="product-list">
+        <div class="card">
+          <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" />
+          <div class="card-content">
+            <span class="card-title">title product</span>
+            <span class="card-price">harga: 15000</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              harum?
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" />
+          <div class="card-content">
+            <span class="card-title">title product</span>
+            <span class="card-price">harga: 15000</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              harum?
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" />
+          <div class="card-content">
+            <span class="card-title">title product</span>
+            <span class="card-price">harga: 15000</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              harum?
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" />
+          <div class="card-content">
+            <span class="card-title">title product</span>
+            <span class="card-price">harga: 15000</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              harum?
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" />
+          <div class="card-content">
+            <span class="card-title">title product</span>
+            <span class="card-price">harga: 15000</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              harum?
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" />
+          <div class="card-content">
+            <span class="card-title">title product</span>
+            <span class="card-price">harga: 15000</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              harum?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!--tag footer: berisi informasi seperti navigasi menu,copyright,dll-->
+  <footer><span>copyright 2024|| akmal </span></footer>
+</html>

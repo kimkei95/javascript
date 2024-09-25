@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="logo">MTGJourney</a>
+      <div class="nav-menu">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+      </div>
+      <div class="hamburger-menu" id="toogleMenu">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+      </div>
+      <div class="auth">
+        <button class="login">sign in</button>
+        <button class="register">Sign up</button>
+      </div>
+    </nav>
+    <section class="banner">
+      <div class="banner-text">
+        <h1>Welcome to my website</h1>
+        <span
+          >This is My Journey Through seven years of playing Magic The Gathering
+          Commander Format.</span
+        >
+      </div>
+    </section>
+    <section class="blog">
+      <h2>MyJourney</h2>
+      <div class="blog-list">
+        <div class="card">
+          <img src="saskia.jpg" alt="Saskia" />
+          <div class="card-content">
+            <span class="card-title">Saskia The Unyielding</span>
+            <p>My First infect Commander</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://media-dominaria.cursecdn.com/attachments/171/237/636916148665748971.png"
+            alt="Feather"
+          />
+          <div class="card-content">
+            <span class="card-title">Feather, The Redeemed</span>
+            <p>My second infect Commander</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://cdn11.bigcommerce.com/s-3b5vpig99v/images/stencil/500x659/products/606597/1239700/AragornTheUniterArtCard__30491.1686669452.jpg?c=2"
+            alt="Aragorn"
+          />
+          <div class="card-content">
+            <span class="card-title">Aragorn The Uniter</span>
+            <p>My third tribal legends commander</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const hamburgerMenu = document.getElementById("toogleMenu");
+    const mobileMenu = document.getElementById("mobileMenu");
+    hamburgerMenu.addEventListener("click", () => {
+      mobileMenu.classList.toggle("show");
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

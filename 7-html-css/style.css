@@ -1,0 +1,211 @@
+/* css: untuk mengatur style/desain di website  */
+
+/* cara pertama dengan memanggil tag yang mau di styling */
+body {
+  /* font family: untuk ngatur jenis font */
+  font-family: sans-serif;
+  background-color: beige;
+  /* margin untuk mengatur jarak antar konten */
+  margin: 0px;
+}
+nav {
+  /* secara umum padding buat ngatur jarak ke dalem konten */
+  /* padding inline: buat ngasih jarak kedalem kiri kanan */
+  padding-inline: 16px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  background-color: yellowgreen;
+  /* display untuk ngatur tampilan konten kesampin/kebawah */
+  display: flex;
+  /* justify konte nuntuk ngatur posisi konten ketengah/samping kiri atau kanan atau tengah atau sama rata*/
+  justify-content: center;
+  /* align items untuk ngatur posisi vertikal konten diatas/tengah/bawah */
+  align-items: center;
+  /* gap untuk ngatur jarak antar elemen*/
+  gap: 36px;
+  /* position: buat atur positioning  sebuah komponen */
+  position: sticky;
+  top: 0;
+}
+nav a {
+  /* text decoration buat ngatur dekorasi text kek ngasih underline dll */
+  text-decoration: none;
+  /* color: buat ngasih warna pada teks */
+  color: black;
+  /* font weight buat ngatur ketebalan teks/font */
+  font-weight: bold;
+}
+/* hover: untuk ngatur style harus terpisah */
+nav a:hover {
+  color: white;
+}
+
+/* cara kedua make. */
+.style-h1 {
+  color: cadetblue;
+}
+.style-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 10px;
+  margin: 16px;
+  /* border: buat nambahin garis tepi */
+  border-style: solid;
+  /* border width: mengatur ketebalan garis */
+  border-width: 1px;
+  /* ngasih warna  */
+  border-color: black;
+  /* box shadow(kesamping, kebawah,blur) buat ngasih bayangan */
+  box-shadow: 5px 5px 15px grey;
+}
+
+.style-img {
+  /* width buat ngatur lebar konten */
+  width: 200px;
+  /* height: ngatur tinggi konten */
+  height: auto;
+  /* object fit buat ngatur tata letak gambar */
+  object-fit: fill;
+  /* object position buat ngatur posisi gambar */
+  object-position: center;
+  /* aspect ratio untuk ngatur proporsi gambar */
+  aspect-ratio: 16/9;
+}
+.style-table {
+  /* border collapse untuk ngatur jarak table */
+  border-collapse: collapse;
+}
+.style-table th {
+  border: 1px solid black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.style-table td {
+  border: 1px solid black;
+}
+
+.style-form {
+  background-color: goldenrod;
+  padding: 16px;
+  /* grid diapke buat ngatur posisi element */
+  display: grid;
+  /* grid template comun buat ngatur lebar konten */
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 5px 5px 15px grey;
+}
+input[type="text"],
+input[type="date"] {
+  grid-column: 1 / span 2;
+}
+
+label[for="email"] {
+  grid-column: 1;
+  grid-row: 3;
+}
+/* cara ketiga manggil pake id */
+#email {
+  grid-column: 1;
+}
+label[for="password"] {
+  grid-column: 2;
+  grid-row: 3;
+}
+input[type="password"] {
+  grid-column: 2;
+  grid-row: 4;
+}
+label[for="password"] {
+  grid-column: 2;
+  grid-row: 3;
+}
+input[type="password"] {
+  grid-column: 2;
+  grid-row: 4;
+}
+.gender {
+  display: flex;
+  gap: 8px;
+  grid-column: 1 / span 2;
+  align-items: center;
+}
+label[for="file"],
+input[type="file"] {
+  grid-column: 1;
+}
+
+.agreement {
+  grid-column: 1;
+  gap: 8px;
+  align-items: center;
+  display: flex;
+}
+input[type="submit"] {
+  grid-column: 1 / span 2;
+}
+.style-form input {
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+/* focus untuk ngatur style ketika input aktif */
+.style-form input:focus {
+  border: 1px solid blue;
+  /* buat ngilangin garis border ketika input di klik */
+  outline: none;
+}
+
+footer {
+  background-color: darkgray;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+.product-section {
+  margin-top: 40px;
+}
+.product-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.card {
+  border: 1px solid black;
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+}
+.card img {
+  width: 300px;
+  height: auto;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 16px;
+}
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.card-price {
+  font-weight: 600;
+}

@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins";
+  margin: 0px;
+}
+
+nav {
+  background-color: white;
+  padding-inline: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav .logo {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 28px;
+  color: black;
+}
+
+nav .nav-menu {
+  display: flex;
+  gap: 28px;
+}
+nav .hamburger-menu {
+  display: none;
+}
+nav .mobile-menu {
+  display: none;
+}
+
+nav .nav-menu a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+.login {
+  padding: 8px;
+  padding-inline: 16px;
+  background-color: #8eaccd;
+  border-style: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+}
+
+.register {
+  padding: 8px;
+  padding-inline: 16px;
+  background-color: #52894b;
+  border-style: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+}
+
+/* banner */
+.banner {
+  background-image: url(solring.png);
+  height: 70vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .banner-text h1 {
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  font-size: 42px;
+  text-shadow: 5px 5px 5px rgb(96, 96, 96);
+  text-align: center;
+  margin: auto;
+}
+
+.banner .banner-text span {
+  color: white;
+  font-size: 20px;
+  text-shadow: 5px 5px 5px rgb(96, 96, 96);
+  text-align: center;
+  font-weight: 600;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.blog .blog-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  height: 400px;
+  flex-wrap: wrap;
+  padding-inline: 24px;
+}
+
+.blog h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.card {
+  width: 300px;
+  height: 100%;
+  position: relative;
+}
+
+.card img {
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  background-position: center;
+  position: absolute;
+}
+
+.card:hover img {
+  filter: brightness(50%);
+  transition: ease-in-out 0.3s;
+}
+
+.card-content {
+  position: relative;
+  padding: 16px;
+  margin: auto;
+  color: white;
+}
+
+.card-content .card-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+.card-content p {
+  font-weight: 600;
+  opacity: 0;
+}
+
+.card:hover .card-content p {
+  opacity: 100;
+  filter: brightness(100%);
+  transition: ease-in-out 0.3s;
+}
+
+/* media query untuk ngatur styling
+di ukuran layar tertentu */
+@media screen and (max-width: 768px) {
+  nav {
+    padding-inline: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+  nav .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    top: 61px;
+    width: 100%;
+    padding: 0px;
+    left: 0px;
+    padding-inline: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    gap: 8px;
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+  }
+  /* toogle untuk atur style ketika di klik */
+  .show {
+    visibility: visible !important;
+    max-height: 121px !important;
+    opacity: 1 !important;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out !important;
+    /* transition: opacity 0.5s ease-in-out !important; */
+  }
+  nav .mobile-menu a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    border-bottom: 1px solid grey;
+  }
+  nav .nav-menu {
+    display: none;
+  }
+  nav .auth {
+    display: none;
+  }
+  .banner {
+    height: 25vh;
+  }
+  .banner .banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner .banner-text h1 {
+    font-size: 24px;
+  }
+  .banner .banner-text span {
+    font-size: 12px;
+    text-align: center;
+  }
+  .blog {
+    padding-inline: 16px;
+  }
+  .blog .blog-list .card {
+    height: 250px;
+  }
+  .blog .blog-list .card {
+    height: 250px;
+  }
+}

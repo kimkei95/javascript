@@ -1,0 +1,135 @@
+body {
+  font-family: sans-serif;
+  background-color: beige;
+  margin: 0px;
+}
+nav {
+  padding-inline: 16px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  position: sticky;
+  top: 0;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: blue;
+}
+.auth {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  object-position: center;
+}
+.konten2 {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -80%);
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.konten3 {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -80%);
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {
+  background-color: #04aa6d;
+  border-radius: 8px;
+  position: absolute;
+  top: 90%;
+  left: 77%;
+  transform: translate(-90%, -77%);
+} /* Green */
+.button2 {
+  background-color: #008cba;
+  border-radius: 8px;
+  position: absolute;
+  top: 90%;
+  left: 89%;
+  transform: translate(-90%, -80%);
+} /* Blue */
+
+.konten4 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.teks {
+  color: cadetblue;
+  text-align: center;
+  width: 70%;
+}
+.product-section {
+  margin-top: 40px;
+}
+.product-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex-grow: 1;
+}
+.card {
+  border: 1px solid black;
+  width: 400px;
+  height: 800px;
+  border-radius: 12px;
+}
+.card img {
+  width: 400px;
+  height: 800px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+}
+footer {
+  background-color: darkgray;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
