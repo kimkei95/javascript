@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Journey</title>
+  </head>
+  <body>
+    <nav
+      class="bg-green-500 flex justify-between items-center px-6 py-5 font-bold uppercase sticky top-0 z-10"
+    >
+      <a href="">logo</a>
+      <div class="flex gap-4 lg:gap-8 text-sm lg:text-base">
+        <a href="#" class="hover:text-white transition-all duration-300"
+          >Home</a
+        >
+        <a href="#" class="hover:text-white transition-all duration-300"
+          >about</a
+        >
+        <a href="#" class="hover:text-white transition-all duration-300"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <section
+      class="bg-[url(https://plus.unsplash.com/premium_photo-1676496046182-356a6a0ed002?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] relative bg-cover bg-center object-center bg-no-repeat flex w-full h-[480px] lg:h-[700px]"
+    >
+      <div class="flex flex-col justify-center items-center w-full">
+        <h1
+          class="font-bold text-black text-2xl lg:text-5xl uppercase drop-shadow-[5px_10px_10px_#000000]"
+        >
+          Welcome to my website
+        </h1>
+        <span
+          class="text-sm lg:text-xl font-semibold text-white max-w-[360px] lg:max-w-[720px] text-center shadow-xl"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+          cumque!</span
+        >
+      </div>
+    </section>
+    <svg
+      width="80"
+      height="80"
+      viewBox="0 0 80 80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <rect width="80" height="80" fill="url(#pattern0_4_46)" />
+      <defs>
+        <pattern
+          id="pattern0_4_46"
+          patternContentUnits="objectBoundingBox"
+          width="1"
+          height="1"
+        >
+          <use xlink:href="#image0_4_46" transform="scale(0.0104167)" />
+        </pattern>
+        <image
+          id="image0_4_46"
+          width="96"
+          height="96"
+          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAEdUlEQVR4nO2cTWgVVxTHf/WVBNFWigRJTEQFDbgogl0oCG7ciFpd2EU3XRVrxbbuXNSNG3GbjTQohQoKfiD4RSl+rNwkCl10027EYtAKRnkvLSpJGhfnQZJx3sy9M/fe+XjnB2eRl3nvnnv+93POnQFFURRFURRFURRFURRFWcwQcAVoAXNqidYCrgLDmSIdwxAwWYKKVc0mgcEM8X6PKyWoTFXtUlpwP0i7AOlSHxlcp7xPC1iRdIGJAHNufOlaEmO8JJQXSjwqQMGoABXAZtb/piAfQ3IIu5jkxrSgMaDHRYElpxcYp2QCjAH9LgqrCP2Yi5Abk2GnG1p+lB6k7rkEcLEPMPkNV6wB9gG7gbXMb/UngMfATeAa8CSgT97j472LGbAaGAVmDPyZRW4BrA3kW+FDkG/2A1MGfkStBXwewL9aC/AD0qJtg7+wN3zv2cfaCrCffMFfKILPnlBLAQbJNuwkDUcDnnytpQA/G5Rra2c8+Vo7AdZgttqxtRkcZagi5IpPqJtxC3PKaTnTfUDDgw+N9m/HYeNfcPL2gE455U45018Nysxqtxz4F6X0Q1BSTjkuZ/qXQZlZ7U8H/kUpvQBJR1maltfntZYD/6Lkik/RCRknLcQj3v0LIcDdhP/difnsmS9HgKcxn9n6F5y8Q9Aw8DLme5PAhpjrQ0/Ctv5FKf0cALLSuISMqU3gIp1XGEcMysxqhx34F6USAtgwhJ+N2DQl3IiVooAYzhqUa2s/efK1lgKsxu1ytIm/nHUtBQDYhZuhaBbY69HP2goAkkzJm5D5zrOPtRYAJJmSZThqAnsC+Fd7AQD6gBFkJWPS6s8R7pxSrvhU7VjKIPPHUtax+FjKI2Sjdb39dyi8xydN4UN058GsXszOiebGZLwdp7uOJg4ADzGLTW5MJ71xuqMn9AIPMI9LbmxWHno8vYBJWElGnxErMypAwagABWMiwJR3L+pLalLfRIBS5EUripPYDaMv68hipjllIwaZz5kWXbGyWxM57OUs+IqiKIqiKIqiKFHWA18hrxKYIOymZxZJDY4AXwAfe64rwNYUn2aATwL40ZH1wEFk5/yKsIJMI4KcAnYi6UPX/Jjiw5iHMjPTALYAx4DbwGvCCvJfu9xjbT9c3H6/l1LmSQdleGMp0jJPIi3FxzH0JHsBXAa+BTZa+t6HnElKa0Q7LX+3UFYgRw9HgD+A/wkryBPgF2QO6/TswHLgNPDG4PdeI42ssqwCvkSeD3hEWDHmkMdYTwMHgJXIG4N/t/j+PfchKZZ1wNfABeAfwooxm6HM437CUB4WrrDiHqwr2rbZVijkwVrXNIDNyKS3HdhBsS8Zn0KGrekCfSiUD1m85H1L2NZ/w38Vq8UypHecQjZnLt6+lWRHw1SruvQhtytGMD/ZbGOfhqtKPehHBBkF/iZf8J9T7fm0FGxCntK/iv0Ky9czyF1LA/gMmdB/Q+4pdQr+BP5eCKi06UGWuSeA+8C/SC85j7xaQVEURVEURVEURVEURVFSeQdkx+R4lK0kmQAAAABJRU5ErkJggg=="
+        />
+      </defs>
+    </svg>
+
+    <section
+      class="flex flex-col justify-center items-center px-6 my-6 lg:my-10"
+    >
+      <h2 class="text-4xl font-bold uppercase mb-4 lg:mb-6">My Journey</h2>
+      <div class="card-list flex gap-6 flex-wrap justify-center">
+        <div
+          class="card max-w-[140px] lg:max-w-[280px] h-auto relative bg-black group overflow-hidden"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1685456067088-45926b602402?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+            class="group-hover:opacity-50 group-hover:scale-105 transition-all duration-500"
+          />
+          <div class="absolute top-2 left-2 lg:left-4">
+            <span class="text-xl lg:text-3xl font-bold uppercase text-white"
+              >Jakarta</span
+            >
+            <p
+              class="text-[8px] lg:text-sm text-white font-semibold opacity-0 translate-y-40 group-hover:translate-y-16 lg:translate-y-72 opacity-0 group-hover:opacity-100 lg:group-hover:translate-y-40 transition-all duration-300"
+            >
+              Tempat Tikus Berdasi
+            </p>
+          </div>
+        </div>
+        <div
+          class="card max-w-[140px] lg:max-w-[280px] h-auto relative bg-black group overflow-hidden"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1685456067088-45926b602402?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+            class="group-hover:opacity-50 group-hover:scale-105 transition-all duration-500"
+          />
+          <div class="absolute top-2 left-2 lg:left-4">
+            <span class="text-xl lg:text-3xl font-bold uppercase text-white"
+              >Garut</span
+            >
+            <p
+              class="text-[8px] lg:text-sm text-white font-semibold opacity-0 translate-y-40 group-hover:translate-y-16 lg:translate-y-72 opacity-0 group-hover:opacity-100 lg:group-hover:translate-y-40 transition-all duration-300"
+            >
+              Hitler Was Here
+            </p>
+          </div>
+        </div>
+        <div
+          class="card max-w-[140px] lg:max-w-[280px] h-auto relative bg-black group overflow-hidden"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1685456067088-45926b602402?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+            class="group-hover:opacity-50 group-hover:scale-105 transition-all duration-500"
+          />
+          <div class="absolute top-2 left-2 lg:left-4">
+            <span class="text-xl lg:text-3xl font-bold uppercase text-white"
+              >Bogor</span
+            >
+            <p
+              class="text-[8px] lg:text-sm text-white font-semibold opacity-0 translate-y-40 group-hover:translate-y-16 lg:translate-y-72 opacity-0 group-hover:opacity-100 lg:group-hover:translate-y-40 transition-all duration-300"
+            >
+              Jajan part 1
+            </p>
+          </div>
+        </div>
+        <div
+          class="card max-w-[140px] lg:max-w-[280px] h-auto relative bg-black group overflow-hidden"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1685456067088-45926b602402?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+            class="group-hover:opacity-50 group-hover:scale-105 transition-all duration-500"
+          />
+          <div class="absolute top-2 left-2 lg:left-4">
+            <span class="text-xl lg:text-3xl font-bold uppercase text-white"
+              >Jogja</span
+            >
+            <p
+              class="text-[8px] lg:text-sm text-white font-semibold opacity-0 translate-y-40 group-hover:translate-y-16 lg:translate-y-72 opacity-0 group-hover:opacity-100 lg:group-hover:translate-y-40 transition-all duration-300"
+            >
+              Jajan part 2
+            </p>
+          </div>
+        </div>
+        <div
+          class="card max-w-[140px] lg:max-w-[280px] h-auto relative bg-black group overflow-hidden"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1685456067088-45926b602402?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+            class="group-hover:opacity-50 group-hover:scale-105 transition-all duration-500"
+          />
+          <div class="absolute top-2 left-2 lg:left-4">
+            <span class="text-xl lg:text-3xl font-bold uppercase text-white"
+              >Bandung</span
+            >
+            <p
+              class="text-[8px] lg:text-sm text-white font-semibold opacity-0 translate-y-40 group-hover:translate-y-16 lg:translate-y-72 opacity-0 group-hover:opacity-100 lg:group-hover:translate-y-40 transition-all duration-300"
+            >
+              Jajan part 3
+            </p>
+          </div>
+        </div>
+        <div
+          class="card max-w-[140px] lg:max-w-[280px] h-auto relative bg-black group overflow-hidden"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1685456067088-45926b602402?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+            class="group-hover:opacity-50 group-hover:scale-105 transition-all duration-500"
+          />
+          <div class="absolute top-2 left-2 lg:left-4">
+            <span class="text-xl lg:text-3xl font-bold uppercase text-white"
+              >Bali</span
+            >
+            <p
+              class="text-[8px] lg:text-sm text-white font-semibold opacity-0 translate-y-40 group-hover:translate-y-16 lg:translate-y-72 opacity-0 group-hover:opacity-100 lg:group-hover:translate-y-40 transition-all duration-300"
+            >
+              Borong miras dan babi h3h3 (tes kriuk ges)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
